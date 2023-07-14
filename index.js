@@ -49,7 +49,7 @@ function renderMoviesList(data) {
     if (movie.Poster !== 'N/A') {
       moviePoster = movie.Poster;
     } else {
-      moviePoster = '/resources/movie-not-found.webp'
+      moviePoster = 'resources/movie-not-found.webp'
     }
 
     movieItem.innerHTML = `
@@ -99,7 +99,7 @@ function renderMovieCard(dataCard) {
   if (dataCard.Poster !== 'N/A') {
     dataCardPoster = dataCard.Poster;
   } else {
-    dataCardPoster = '/resources/movie-not-found.webp'
+    dataCardPoster = 'resources/movie-not-found.webp'
   };
 
   movieDetails.innerHTML = `

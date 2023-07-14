@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie-search-app</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="hide-list" class="container">
+      <div>
+        <h1>Movie search</h1>
+        <div class="movie__wrapper">
+          <input
+            id="movie__input"
+            class="movie__input"
+            type="text"
+            placeholder="Enter movie name"
+          />
+          <button id="movie__btn" class="movie__btn">Search</button>
+        </div>
+
+        <output id="movie__output" class="movie__output"></output>
+
+        <ul id="movie__list" class="movie__list">
+          <!-- <li class="movie-item">
+            <img
+              class="movie-item_img"
+              src="/resources/movie-not-found.webp"
+              alt="Превью фильма"
+            />
+            <div class="movie-item_wrapper">
+              <h2 class="movie-item_title">Batman Begins</h2>
+              <p class="movie-item_year">2005</p>
+              <p class="movie-item_category">Фильм</p>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div id="card-details" class="container card-details">
+      <!-- <div id="movie-card">
+        <a href="index.html" class="card_link">← Back to search</a>
+        <div class="movie-card_wrapper">
+          <div class="movie-card_list">
+            <img
+              src="resources/movie_preview.png"
+              alt=""
+              class="movie-card__img"
+            />
+            <div class="movie-card__description">
+              <h1 class="movie-card_title">Batman</h1>
+              <ul class="movie-card_categorys">
+                <li class="movie-card_category">
+                  Year:<span class="color">2005</span>
+                </li>
+                <li class="movie-card_category">
+                  Rated:<span class="color"></span>
+                </li>
+                <li class="movie-card_category">
+                  Released:<span class="color"></span>
+                </li>
+                <li class="movie-card_category">
+                  Runtime:<span class="color"></span>
+                </li>
+                <li class="movie-card_category">
+                  Genre:<span class="color"></span>
+                </li>
+                <li class="movie-card_category">
+                  Director:<span class="color"></span>
+                </li>
+                <li class="movie-card_category">
+                  Writer:<span class="color"></span>
+                </li>
+                <li class="movie-card_category">
+                  Actors:<span class="color"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="movie-description">
+          After witnessing his parents' death, Bruce learns the art of fighting
+          to confront injustice. When he returns to Gotham as Batman, he must
+          stop a secret society that intends to destroy the city.
+        </p>
+      </div> -->
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

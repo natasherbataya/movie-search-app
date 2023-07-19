@@ -28,9 +28,9 @@ function getMovieFromUser() {
 function loadMovies(movieName) {
   fetch(`https://www.omdbapi.com/?s=${movieName}&apikey=${key}`)
     .then(response => response.json())
-    .then((data) => {
-      if (data.Response == 'True') {
-        renderMoviesList(data);
+    .then((movies) => {
+      if (movies.Response == 'True') {
+        renderMoviesList(movies);
       } else {
         outputNode.classList.add(TEXT_NOT_FOUND_FILMS_CLASSNAME);
         return outputNode.innerText = TEXT_NOT_FOUND_FILMS;
@@ -38,9 +38,9 @@ function loadMovies(movieName) {
     })
 };
 
-function renderMoviesList(data) {
+function renderMoviesList(movies) {
   searchListNode.innerHTML = '';
-  data.Search.forEach((movie) => {
+  movies.Search.forEach((movie) => {
 
     let movieItem = document.createElement('li');
     movieItem.classList.add('movie-item');
